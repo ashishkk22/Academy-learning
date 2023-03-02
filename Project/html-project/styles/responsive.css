@@ -1,0 +1,83 @@
+@media only screen and (max-width: 700px) {
+  .header_container {
+    flex-direction: column;
+    height: 7rem;
+  }
+  .search-bar-hide {
+    display: none;
+  }
+  .header-right-side {
+    display: none;
+  }
+  .header-left-side {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-header-small {
+    display: block;
+  }
+  .search-bar-hide-big {
+    display: block;
+  }
+  form {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .category-container {
+    margin-top: 7rem;
+  }
+  .card {
+    padding: 0.9rem 1.5rem;
+  }
+  .card-img {
+    width: 3rem;
+  }
+  .deal-right-container {
+    display: none;
+  }
+  .deal-container {
+    width: 95%;
+  }
+  .deal-left-container {
+    min-width: 100%;
+  }
+  .time-runnig-img {
+    width: 1.28rem;
+    margin-left: 1rem;
+  }
+  .essential-deal-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  form {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .card {
+    padding: 0.9rem 1.5rem;
+  }
+  .card-img {
+    width: 3rem;
+  }
+  .deal-right-container {
+    display: none;
+  }
+  .deal-container {
+    width: 95%;
+  }
+  .deal-left-container {
+    min-width: 100%;
+  }
+  .time-runnig-img {
+    width: 1.28rem;
+    margin-left: 1rem;
+  }
+  .essential-deal-container {
+    width: 95%;
+  }
+}

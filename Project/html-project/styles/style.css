@@ -1,0 +1,457 @@
+/* roboto font  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* css reset  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* header (navigation) css*/
+.header_container {
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2874f0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+}
+nav input {
+  width: 100%;
+  height: 2.2rem;
+  display: block;
+  border-radius: 0.625rem;
+  padding: 0 0.75rem;
+  border: none;
+}
+nav input:focus {
+  outline: none;
+}
+form {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.header-left-side {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 1rem;
+}
+.logo-image {
+  width: 5rem;
+}
+.plus_logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  font-style: italic;
+}
+.plus_logo img {
+  margin-left: 0.5rem;
+  width: 0.7rem;
+}
+.plus_text {
+  color: #ffe500;
+}
+.btn-header-small {
+  display: none;
+}
+.search-bar-hide-big {
+  display: none;
+}
+.header-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.more-a-tag svg {
+  margin-left: 0.5rem;
+  rotate: -90deg;
+}
+.more-a-tag {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 0.1rem;
+  background-color: #f9f9f9;
+  border-radius: 0.3rem;
+  color: black;
+  width: 20rem;
+  overflow: hidden;
+}
+.more-a-tag:hover .dropdown-content {
+  display: block;
+}
+.ul-list-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-subcontent {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #e4e7ed;
+  cursor: pointer;
+}
+
+/* main content css  */
+.main-content {
+  margin-top: 3.5rem;
+  min-height: 100vh;
+  background-color: #e4e7ed;
+}
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.03125rem solid #e4e7ed;
+  background-color: white;
+}
+.category-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img {
+  width: 4rem;
+}
+.card {
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card svg {
+  margin-left: 0.5rem;
+  rotate: -90deg;
+}
+.card:hover svg {
+  rotate: 90deg;
+}
+.card:hover {
+  color: #2874f0;
+}
+.dropdown-card-content {
+  z-index: 5;
+  display: none;
+  position: absolute;
+  margin-top: 0.1rem;
+  background-color: #f9f9f9;
+  border-radius: 0.3rem;
+  color: black;
+  width: 15rem;
+  overflow: hidden;
+}
+.card:hover .dropdown-card-content {
+  display: block;
+}
+/* deals section css  */
+.deal-center-container {
+  display: flex;
+  justify-content: center;
+}
+.deal-container {
+  width: 88%;
+  height: 22rem;
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+.deal-card {
+  padding: 1.2rem 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 11rem;
+  cursor: pointer;
+}
+.deal-card-img {
+  height: 8.5rem;
+  margin-bottom: 1rem;
+}
+.banner-text {
+  font-size: xx-large;
+  opacity: 0.9;
+  text-align: center;
+}
+.banner-img {
+  position: relative;
+  top: 0.2rem;
+  width: 11.4rem;
+}
+.banner-upper-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.deal-left-container {
+  width: 100%;
+  max-width: calc(100% - 12rem);
+}
+.container-heading {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.125rem solid #f1f3f6;
+  font-size: large;
+  font-weight: 500;
+}
+.deals-container-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer-deals-section {
+  display: flex;
+  align-items: center;
+}
+.timer-deals-section img {
+  width: 1.2rem;
+  margin-left: 1.3rem;
+  margin-right: 0.4rem;
+}
+.timer-deals-section p {
+  font-weight: 400;
+  color: grey;
+  font-size: medium;
+}
+.offer-cards {
+  display: flex;
+  overflow: hidden;
+}
+.offer-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0.4rem;
+  color: #388e3c;
+  line-height: 1.7;
+}
+.light-offer-text {
+  margin-top: 0.4rem;
+  color: #9ca4b3;
+}
+.deal-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  height: 100%;
+  border-left: 0.5rem solid #e4e7ed;
+}
+.banner-upper-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-scroll-container {
+  float: right;
+  margin-top: 4.2rem;
+  z-index: 1;
+}
+.btn-left-scroll-container {
+  float: left;
+  margin-top: 4.2rem;
+  z-index: 2;
+  height: 2rem;
+}
+.btn-scroll {
+  padding: 1.8rem 0.65rem;
+  border: none;
+  border-left: none;
+  border-radius: 0.312rem;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.312rem 0.93rem;
+}
+.scroll-img {
+  width: 1.5rem;
+}
+.angel-right-scroll-img {
+  width: 1.5rem;
+  transform: rotate(180deg);
+}
+
+/* specific deal section css  */
+.specific-deal-container {
+  width: 100%;
+}
+.specific-offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.essential-deal-container {
+  width: 88%;
+  height: auto;
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  margin-bottom: 10rem;
+}
+.essential-container-heading {
+  display: flex;
+  flex-direction: column;
+}
+.essential-container-heading p {
+  font-size: small;
+  font-weight: 400;
+  color: rgb(141, 141, 141);
+  margin-top: 0.3rem;
+}
